@@ -10,7 +10,10 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;
+    600;700&display=swap" rel="stylesheet">
+    <!-- Swiper Css link -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <!-- Css link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -38,6 +41,7 @@
         </nav>
     </header>
     <main>
+        <!-- Section hero -->
         <section class="hero-section">
             <!-- <div class="bubbles">
                 <span style="--i:11;"></span>
@@ -92,6 +96,7 @@
                 </div>
             </div>
         </section>
+        <!-- Section About -->
         <section class="section-about">
             <div class="container grid grid--2--cols">
                 <div class="about-img">
@@ -115,9 +120,85 @@
                 </div>
             </div>
         </section>
+        <!-- Section Project -->
+        <section class="section-project" id="porject">
+            <div class="project-main-title">
+                <h2 class="my-name project-heading">Projects</h2>
+                <p class="project-para">Most recent projects. Let me show you my codes.</p>
+            </div>
+            <div class="container project-container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Project-1 -->
+                    <div class="project-content grid grid--2--cols swiper-slide">
+                        <img src="./img/solo.jpg" alt="Solo" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project-title">Solo</h3>
+                            <p class="project-description">
+                                A big Digital Creative Agency Company and their service is so nice.You can check out..
+                            </p>
+                            <button class="cv-download">
+                            <a href="#" class="project-btn" style="--clr:#49FFD1">
+                                <span>Website <i></i></span>
+                            </a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Project-2 -->
+                    <div class="project-content grid grid--2--cols swiper-slide">
+                        <img src="./img/omnifood icon.png" alt="OmniFood" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project-title">OmniFood</h3>
+                            <p class="project-description">
+                                One of the big delivery food companies.You can enjoy with a delious foods. 
+                            </p>
+                            <button class="cv-download">
+                                <a href="https://omnifood2002.netlify.app" class="project-btn" style="--clr:#49FFD1" target="_blank">
+                                    <span>Website <i></i></span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Project-3 -->
+                    <div class="project-content grid grid--2--cols swiper-slide">
+                        <img src="./img/guessNumber.jpg" alt="guessNumber" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project-title">Guess My Number</h3>
+                            <p class="project-description">
+                                Game Rule: You can guess any numbers between 0 and 20.Once you guess, you will lose 1 highscore. Enjoy!
+                            </p>
+                            <button class="cv-download">
+                                <a href="#" class="project-btn" style="--clr:#49FFD1">
+                                    <span>Website <i></i></span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Project-4 -->
+                    <div class="project-content grid grid--2--cols swiper-slide">
+                        <img src="./img/PigRollingDice.png" alt="RollingDice" class="project-img">
+                        <div class="project-data">
+                            <h3 class="project-title">Rolling Dice</h3>
+                            <p class="project-description">
+                                There's two players and each player can roll dice three times and press hold button. While rolling dice if you get Dice number (1),it will turn other player side automatically. Enjoy!
+                            </p>
+                            <button class="cv-download">
+                                <a href="#" class="project-btn" style="--clr:#49FFD1">
+                                    <span>Website <i></i></span>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
     <!-- type.js -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Swiper js -->
+    <script src="./js/swiper-bundle.min.js"></script>
     <!-- custom js -->
     <script src="./js/script.js"></script>
 </body>

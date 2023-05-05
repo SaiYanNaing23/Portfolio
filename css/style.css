@@ -96,6 +96,7 @@ body{
     overflow: hidden;
     width: 120px;
     height: 40px;
+
 }
 .btn::before{
     content: '';
@@ -126,6 +127,7 @@ body{
 .btn-contact:hover{
     box-shadow: 0 0 4rem #2CF000;
     transition: all .5s;
+    
 }
 .moving-cta{
     color: inherit;
@@ -498,4 +500,81 @@ body{
     100%{
         transform: translateX(-1rem);
     }
+}
+
+/*---------------------- section-project ---------------------*/
+.section-project{
+    padding: 9.6rem 0;
+    /* text-align: center; */
+}
+.project-main-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-heading{
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+.project-para{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+    text-shadow: 0 0 .1rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.project-container{
+    padding: 3.6rem 0;
+}
+.project-content{
+    padding: 0 1.5rem;
+}
+.project-img{
+    width: 26.5rem;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.project-title{
+    font-size: 2rem;
+    color: #49FFD1;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-shadow: 0 0 .5rem;
+    margin-bottom: 3rem;
+}
+.project-description{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.cv-download .project-btn i::before{
+    left: 90%;
+    top: -1.35rem;
+}
+.cv-download .project-btn:hover i::before{
+    left: -8%;
+}
+
+.cv-download .project-btn i::after{
+    left: -8%;
+    bottom: -1.35rem;
+}
+.cv-download .project-btn:hover i::after{
+    left: 80%;
+}
+.swiper-button-next{
+    color: #2CF000;
+    text-shadow: 0 0 1rem;
+}
+.swiper-button-prev{
+    color: #2CF000;
+    text-shadow: 0 0 1rem;
+}
+.swiper-pagination{
+    --swiper-theme-color: #2CF000;
 }
