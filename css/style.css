@@ -136,6 +136,71 @@ body{
     cursor: pointer;
 }
 
+.cv-download{
+    margin-top: 4.4rem;
+    background-color: #212121;
+}
+.cv-download a{
+    position: absolute;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background-color: #444;
+    letter-spacing: .1rem;
+    padding: 1rem 2rem;
+    transition: all .5s;
+}
+.cv-download a:hover{
+    letter-spacing: .2rem;
+    background-color: var(--clr);
+    color: var(--clr);
+    box-shadow: 0 0 3.5rem var(--clr);
+}
+.cv-download a::before{
+    content: '';
+    background-color: #212121;
+    inset: 2px;
+    position: absolute;
+}
+.cv-download a span{
+    position: relative;
+    z-index: 1;
+}
+.cv-download a i{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+.cv-download a i::before{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: .5rem;
+    border: .2rem solid #fff;
+    left: 80%;
+    top: -4px;
+    transition: .5s;
+}
+.cv-download a:hover i::before{
+    width: 2rem;
+    left: 10%;
+}
+
+.cv-download a i::after{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: .5rem;
+    border: .2rem solid #fff;
+    left: 10%;
+    bottom: -4px;
+    transition: .5s;
+}
+.cv-download a:hover i::after{
+    width: 2rem;
+    left: 80%;
+}
 /* .bubbles{
     position: relative;
     display: flex;
@@ -261,10 +326,11 @@ body{
     justify-content: center;
 }
 .hero-text-box{
-    padding: 12.8rem 4.4rem 9.6rem;
+    padding: 12.8rem 4.4rem 0rem;
 }
 .multi-text{
-    color: #B5CFED;
+    /* color: #B5CFED; */
+    color: #2CF000;
 }
 .hero-img{
     width: 100%;
@@ -332,6 +398,7 @@ body{
     margin-bottom: 3.2rem;
     color:#ffffffe7;
     line-height: 1.7;
+    margin-top: 2.4rem;
 }
 
 .social{
@@ -380,4 +447,55 @@ body{
     transform: translateY(-.3rem);
     transition: all .5s;
     color: #1877f2;
+}
+/*---------------------- section-about ---------------------*/
+.section-about{
+    padding:9.6rem 0;
+    background-color: #1e1e1e;
+}
+
+.about-description{
+    width: 100%;
+}
+
+.sub-heading{
+    font-size: 2rem;
+    font-family: inherit;
+    color: #2CF000;
+    text-shadow: 0 0 .5rem;
+    margin-bottom: 1rem;
+}
+.secondary-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fefefeec;
+    margin-bottom: 4rem;
+    line-height: 1.1;
+}
+.myself{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+    text-shadow: 0 0 .1rem;
+    border-bottom: 2px solid #1e7a0a;
+    padding-bottom: 2rem;
+}
+
+.about-img img{
+    justify-self: center;
+    align-self: center;
+    margin-right: 5rem;
+    animation: animate 3s linear infinite;
+    filter: brightness(90%);
+}
+@keyframes animate{
+    0%{
+        transform: translateX(-1rem);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1rem);
+    }
 }
