@@ -56,6 +56,7 @@ body{
     font-weight: 400;
     line-height: 1;
     color: #fff;
+    border-bottom: .3rem solid #000;
 }
 /* ------------------------ General Component ------------------------ */
 .container{
@@ -728,4 +729,21 @@ textarea,
     font-size: 1.6rem;
     font-weight: 500;
     transition: all .2s;
-}   
+}
+
+/*---------------------- section-Footer ---------------------*/
+
+footer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem;
+}
