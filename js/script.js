@@ -18,3 +18,11 @@ let swiper = new Swiper(".project-container", {
       prevEl: ".swiper-button-prev",
     },
 });
+
+// ---------- Share-icon-toggle ------------------
+
+let toggle = document.querySelector(".toggle")
+let menu = document.querySelector(".menu")
+toggle.addEventListener("click",()=>{
+  menu.classList.toggle("active")
+})

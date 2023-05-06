@@ -458,6 +458,7 @@ body{
 
 .about-description{
     width: 100%;
+    padding: 9.6rem 0;
 }
 
 .sub-heading{
@@ -476,6 +477,7 @@ body{
 }
 .myself{
     font-size: 1.4rem;
+    font-weight: 400;
     line-height: 1.5;
     color: #f1f1f1;
     text-shadow: 0 0 .1rem;
@@ -489,6 +491,7 @@ body{
     margin-right: 5rem;
     animation: animate 3s linear infinite;
     filter: brightness(90%);
+    padding: 9.6rem 0;
 }
 @keyframes animate{
     0%{
@@ -512,14 +515,16 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3.6rem;
 }
 .project-heading{
     font-size: 3.2rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
+    padding-top: 3.6rem;
 }
 .project-para{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     color: #f1f1f1;
     text-shadow: 0 0 .1rem;
@@ -547,7 +552,7 @@ body{
     margin-bottom: 3rem;
 }
 .project-description{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.5;
     font-weight: 500;
 }
@@ -567,6 +572,9 @@ body{
 .cv-download .project-btn:hover i::after{
     left: 80%;
 }
+.swiper-wrapper{
+    padding-bottom: 9.6rem;
+}
 .swiper-button-next{
     color: #2CF000;
     text-shadow: 0 0 1rem;
@@ -577,4 +585,91 @@ body{
 }
 .swiper-pagination{
     --swiper-theme-color: #2CF000;
+}
+
+/*---------------------- section-Skill ---------------------*/
+
+.skill-header-box{
+    padding: 9.6rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill-header{
+    margin-bottom: 2.4rem;
+
+}
+
+.skill-para{
+    font-size: 1.6rem;
+    color: #2CF000;
+}
+.skill-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 0 9.6rem; */
+}
+.menu{
+    position: relative;
+    width: 58rem;
+    height: 58rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .toggle{
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    background: #e6e6e6;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.25s;
+}
+
+.share-icon{
+    color: #000;
+    font-size: 3.2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.menu.active .toggle
+{
+    transform: rotate(360deg);
+    box-shadow: 0 .5rem .8rem rgb(44, 240, 0),0 0 0 .2rem rgb(44, 240, 0);
+}
+
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: .5s;
+    transform: rotate(calc(360deg/8* var(--i)));
+    transform-origin: 29rem;
+    scale: 0;
+    transition-delay: calc(.1s * var(--i));
+}
+.menu.active li{
+    scale: 1;
+}
+.menu li span{
+    position: relative;
+    display: flex;
+    transform: rotate(calc(360deg/-8* var(--i)));
+}
+.menu li img{
+    width: 4.4rem;
+    height: auto;
+    background: none;
+}
+
+.particles-js-canvas-el{
+    position: absolute;
 }
