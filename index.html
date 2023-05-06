@@ -32,26 +32,19 @@
         </a>
         <nav>
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Projects</a></li>
-                <li><a href="#" class="nav-link">Skills</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <!-- Section hero -->
-        <section class="hero-section" id="home">
-            <!-- <div class="bubbles">
-                <span style="--i:11;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:15;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:26;"></span> -->
-                <div class="hero grid grid--2--cols">
+        <section class="hero-section" id="home" >
+            <!-- <div id="particles-js"></div> -->
+                <div class="hero grid grid--2--cols" >
                     <div class="hero-text-box">
                         <p class="intro">Hello! It's me</p>
                         <h2 class="my-name">Sai Yan Naing</h2>
@@ -94,7 +87,7 @@
                         <img src="./img/90032458_219368475881968_6283958300996167650_n-removebg-preview.png" alt="Developer Image">
                     </div>
                 </div>
-            </div>
+            
         </section>
         <!-- Section About -->
         <section class="section-about" id="about">
@@ -121,7 +114,7 @@
             </div>
         </section>
         <!-- Section Project -->
-        <section class="section-project" id="porjects">
+        <section class="section-project" id="projects">
             <div class="project-main-title">
                 <h2 class="my-name project-heading">Projects</h2>
                 <p class="project-para">Most recent projects. Let me show you my codes.</p>
@@ -256,6 +249,31 @@
                     </div>
                 </div>
 
+        </section>
+        <!-- Section Contact -->
+        <section class="section-contact" id="contact">
+            <div class="container contact-box">
+                <h1 class="my-name contact-heading">Let's Work Together, Grow Together</h1>
+                <form action="#" autocomplete="off">
+                    <div class="cta-form">
+                    <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="Name" id="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email" required>
+                    </div>
+                    </div>
+                    <div>
+                        <label for="message" class="text-label">Message</label>
+                        <textarea name="Message" id="message" style="resize: none;"></textarea>
+                    </div>
+                    <button class="cv-download btn-cta">
+                        <a href="#" style="--clr:#2CF000"><span>Send Message</span><i></i></a>
+                    </button>
+                </form>
+            </div>
         </section>
     </main>
     <!-- type.js -->

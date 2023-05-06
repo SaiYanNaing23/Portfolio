@@ -62,6 +62,14 @@ body{
     max-width: 120rem;
     margin: 0 auto;
 }
+::-webkit-scrollbar{
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb{
+    /* background: #e6e6e6; */
+    background: linear-gradient(transparent, #2CF000);
+    border-radius: .6rem;
+}
 .grid{
     display: grid;
     row-gap: 9.6rem;
@@ -673,3 +681,51 @@ body{
 .particles-js-canvas-el{
     position: absolute;
 }
+
+/*---------------------- section-Contact ---------------------*/
+.section-contact{
+    padding: 9.6rem 0;
+    position: relative;
+}
+.contact-box{
+    padding: 9.6rem;
+}
+.contact-heading{
+    text-align: center;
+    padding-bottom: 5.6rem;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 6.4rem;
+    margin-bottom: 6.4rem;
+}
+textarea,
+.cta-form input{
+    position: relative;
+    width: 100%;
+    /* padding: 1.2rem; */
+    padding: 1rem 0 1rem;
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    font-family: inherit;
+    border: none;
+    background: transparent;
+    border-bottom: .2rem solid #2CF000;
+}
+.text-label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.btn-cta span{
+    text-transform: none;
+}
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all .2s;
+}   
