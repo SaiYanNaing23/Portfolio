@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Personal &mdash; Portfolio</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- google font -->
@@ -18,9 +28,13 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status"><img src="./preloader/Discuss-1s-200px.gif" alt=""></div>
+    </div>
     <!-- Header -->
     <header class="header">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
             <span>P</span>
             <span>O</span>
             <span>R</span>
@@ -42,6 +56,7 @@
         </nav>
     </header>
     <main>
+
         <!-- Section hero -->
         <section class="hero-section" id="home" >
             <!-- <div id="particles-js"></div> -->
@@ -55,33 +70,32 @@
                         </p>
                         <ul class="social">
                             <li>
-                                <a href="#" class="facebook-icon">
+                                <a href="https://www.facebook.com/yannaing.lay.7773"target="_blank" class="facebook-icon">
                                     <i class="fa-brands fa-square-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="instagram-icon">
+                                <a href="https://www.instagram.com/sai_yan_naing_23/" class="instagram-icon" target="_blank" >
                                     <i class="fa-brands fa-instagram"></i>
                                     <!-- <i class="fa-brands fa-square-instagram"></i> -->
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="github-icon">
+                                <a href="https://github.com/SaiYanNaing23" class="github-icon" target="_blank" >
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="linkin-icon">
+                                <a href="https://www.linkedin.com/in/yan-naing-%E3%83%89%E3%83%BC%E3%82%B3-2ab181262/" class="linkin-icon" target="_blank">
                                     <i class="fa-brands fa-linkedin"></i>
                                 </a>
                             </li>
                         </ul>
                         <button class="btn btn-contact">
-                            <a class="moving-cta" id="#">
+                            <a class="moving-cta " href="#contact">
                             Contact Me
                             </a>
-                        </button> 
-                        
+                        </button>                         
                     </div>
                     <div class="hero-img">
                         <img src="./img/splash.png" alt="splash" class="splash">
@@ -93,10 +107,10 @@
         <!-- Section About -->
         <section class="section-about" id="about">
             <div class="container grid grid--2--cols">
-                <div class="about-img">
+                <div class="about-img box">
                     <img src="./img/about.png" alt="2D cartoon Character">
                 </div>
-                <div class="about-description">
+                <div class="about-description box">
                     <h3 class="sub-heading">
                         Who am I ?
                     </h3>
@@ -115,7 +129,8 @@
             </div>
         </section>
         <!-- Section Project -->
-        <section class="section-project" id="projects">
+        <section class="section-project box" id="projects">
+
             <div class="project-main-title">
                 <h2 class="my-name project-heading">Projects</h2>
                 <p class="project-para">Most recent projects. Let me show you my codes.</p>
@@ -131,7 +146,7 @@
                                 A big Digital Creative Agency Company and their service is so nice.You can check out..
                             </p>
                             <button class="cv-download">
-                            <a href="#" class="project-btn" style="--clr:#49FFD1">
+                            <a href="https://solo-project-web.netlify.app/#" class="project-btn" style="--clr:#49FFD1" target="_blank">
                                 <span>Website <i></i></span>
                             </a>
                             </button>
@@ -161,7 +176,7 @@
                                 Game Rule: You can guess any numbers between 0 and 20.Once you guess, you will lose 1 highscore. Enjoy!
                             </p>
                             <button class="cv-download">
-                                <a href="#" class="project-btn" style="--clr:#49FFD1">
+                                <a href="https://guess-my-number23.netlify.app/" class="project-btn" style="--clr:#49FFD1" target="_blank">
                                     <span>Website <i></i></span>
                                 </a>
                             </button>
@@ -176,7 +191,7 @@
                                 There's two players and each player can roll dice three times and press hold button. While rolling dice if you get Dice number (1),it will turn other player side automatically. Enjoy!
                             </p>
                             <button class="cv-download">
-                                <a href="#" class="project-btn" style="--clr:#49FFD1">
+                                <a href="https://pig-rolling-dice.netlify.app/" class="project-btn" style="--clr:#49FFD1" target="_blank">
                                     <span>Website <i></i></span>
                                 </a>
                             </button>
@@ -255,7 +270,7 @@
         <section class="section-contact" id="contact">
             <div class="container contact-box">
                 <h1 class="my-name contact-heading">Let's Work Together, Grow Together</h1>
-                <form action="#" autocomplete="off">
+                <form name="Portfolio Contact" autocomplete="off" netlify>
                     <div class="cta-form">
                     <div>
                     <label for="name">Name</label>
@@ -271,7 +286,7 @@
                         <textarea name="Message" id="message" style="resize: none;"></textarea>
                     </div>
                     <button class="cv-download btn-cta">
-                        <a href="#" style="--clr:#2CF000"><span>Send Message</span><i></i></a>
+                        <a style="--clr:#2CF000"><span>Send Message</span><i></i></a>
                     </button>
                 </form>
             </div>
@@ -281,23 +296,23 @@
     <footer>
         <ul class="social">
             <li>
-                <a href="#" class="facebook-icon">
+                <a href="https://www.facebook.com/yannaing.lay.7773"target="_blank" class="facebook-icon">
                     <i class="fa-brands fa-square-facebook"></i>
                 </a>
             </li>
             <li>
-                <a href="#" class="instagram-icon">
+                <a href="https://www.instagram.com/sai_yan_naing_23/" class="instagram-icon" target="_blank" >
                     <i class="fa-brands fa-instagram"></i>
                     <!-- <i class="fa-brands fa-square-instagram"></i> -->
                 </a>
             </li>
             <li>
-                <a href="#" class="github-icon">
+                <a href="https://github.com/SaiYanNaing23" class="github-icon" target="_blank" >
                     <i class="fa-brands fa-github"></i>
                 </a>
             </li>
             <li>
-                <a href="#" class="linkin-icon">
+                <a href="https://www.linkedin.com/in/yan-naing-%E3%83%89%E3%83%BC%E3%82%B3-2ab181262/" class="linkin-icon" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
             </li>
@@ -315,6 +330,10 @@
     <!-- particle.js -->
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    <!-- Scroll reveal js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Jquery -->
+    <script src="./js/jquery-3.6.4.min.js"></script>
     <!-- custom js -->
     <script src="./js/script.js"></script>
 </body>

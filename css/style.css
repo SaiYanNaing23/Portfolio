@@ -20,6 +20,7 @@ heading-primary : 1.1
 background : #212121;
 text-color : #fff
 btn-color: #2CF000;
+secondary btn : #49FFD1;
 
 --- 03 Shadow
 
@@ -105,7 +106,7 @@ body{
     overflow: hidden;
     width: 120px;
     height: 40px;
-
+    -webkit-box-reflect: below 2px linear-gradient(transparent,rgba(0, 0, 0, 0.151));
 }
 .btn::before{
     content: '';
@@ -237,6 +238,42 @@ body{
         transform: translateY(-10vh);
     }
 } */
+
+/*---------------------- Preloader----------------------*/
+
+#preloader{
+    background-color: #212121;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#status{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+#status img{
+    width: 100%;
+}
+/* 
+.disappear{
+    animation: vanish 1s forwards;
+}
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+} */
 /*---------------------- Header and nav ----------------------*/
 .header{
     width: 100%;
@@ -302,6 +339,7 @@ body{
     font-weight: 500;
     cursor: pointer;
     transition: all .7s;
+    
 }
 .nav-link::after{
     content: "";
@@ -463,6 +501,7 @@ body{
 .section-about{
     padding:9.6rem 0;
     background-color: #1e1e1e;
+    width: 100%;
 }
 
 .about-description{
@@ -612,7 +651,7 @@ body{
 
 .skill-para{
     font-size: 1.6rem;
-    color: #2CF000;
+    color: #fff;
 }
 .skill-box{
     display: flex;
@@ -746,4 +785,23 @@ footer p{
     font-size: 1.4rem;
     color: #fff;
     padding: 1rem;
+}
+
+/*---------------------- Scrolling Effect---------------------*/
+
+.box{
+    transform: translateX(-400%);
+    transition: all 1s ease;
+}
+.box.show{
+    transform: translateX(0);
+}
+
+.section-project.box{
+    transform: translateX(300%);
+    transition: all 1s ease;
+}
+
+.section-project.box.show{
+    transform: translateX(0);
 }

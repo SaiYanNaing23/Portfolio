@@ -1,3 +1,9 @@
+// Preloader
+$(window). on("load", function () {
+  $("#status"). fadeOut(2000);
+  $("#preloader").delay(1000).fadeOut(100);
+});
+
 // ---------- Typing ------------------
 var typingEffect = new Typed(".multi-text",{
     strings : [" Coder."," Web Developer.","UI/UX Designer."],
@@ -26,3 +32,21 @@ let menu = document.querySelector(".menu")
 toggle.addEventListener("click",()=>{
   menu.classList.toggle("active")
 })
+
+// ---------- Scrolling------------------
+const boxes = document.querySelectorAll(".box")
+window.addEventListener("scroll", checkBoxes)
+checkboxes()
+
+function checkBoxes (){
+  const triggerBottom = window.innerHeight /5 *4
+  boxes.forEach(box => {
+    const boxTop = box.getBoundingClientRect().top
+    if(boxTop < triggerBottom){
+      box.classList.add("show")
+    }else{
+      box.classList.remove("show")
+    }
+  })
+}
+
