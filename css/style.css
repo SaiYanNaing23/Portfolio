@@ -44,12 +44,13 @@ default : 9px;
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+
 }
 
 body{
@@ -58,6 +59,7 @@ body{
     line-height: 1;
     color: #fff;
     border-bottom: .3rem solid #000;
+    /* overflow-y: hidden; */
 }
 /* ------------------------ General Component ------------------------ */
 .container{
@@ -68,7 +70,6 @@ body{
     width: 1rem;
 }
 ::-webkit-scrollbar-thumb{
-    /* background: #e6e6e6; */
     background: linear-gradient(transparent, #2CF000);
     border-radius: .6rem;
 }
@@ -264,6 +265,13 @@ body{
 #status img{
     width: 100%;
 }
+
+/* #status p{
+    font-size: 1.4rem;
+    position: absolute;
+    padding-top: 5rem;
+
+} */
 /* 
 .disappear{
     animation: vanish 1s forwards;
@@ -280,7 +288,19 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 9%;
+    padding: 2rem 9%;
+    /* transition: all .4s; */
+}
+.header.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 9%;
+    background: #1a1a1a;
+    z-index: 1000;
+    width: 100%;
+    border-bottom: 1px solid #373737;
+    box-shadow: 0 0rem .5rem #49FFD1;;
 }
 .logo{
     font-size: 3rem;
@@ -358,13 +378,26 @@ body{
     color: #2CF000;
     width: 100%;
 }
-
+.mobile-nav{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+.icon-mobile{
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #fefefe;
+}
+.icon-mobile[name="close-outline"]{
+    display: none;
+}
 /*---------------------- Hero Section ----------------------*/
 .hero-section{
     width: 100%;
     height: 100vh;
     background-position: center;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     position: relative;
 }
 .hero{
@@ -373,6 +406,7 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
+    padding-top: 9.6rem;
 }
 .hero-text-box{
     padding: 12.8rem 4.4rem 0rem;
@@ -383,36 +417,41 @@ body{
 }
 .hero-img{
     width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    filter: grayscale(20%);
+    /* filter: grayscale(40%); */
     position: relative;
 }
 .hero-img img{
-    width: 100%;
+    width: 80%;
     display: block;
     align-self: center;
     justify-self: center;
-    animation: animateUser 5s linear infinite;
+    animation: animateUser 4s linear infinite;
 }
 @keyframes animateUser{
     0%{
-        transform: translateY(-5rem);
+        transform: translateY(-2rem);
     }
     50%{
         transform: translateY(0);
     }
     100%{
-        transform: translateY(-5rem);
+        transform: translateY(-2rem);
     }
 }
-.splash{
+#splash{
     position: absolute;
-    top: 25%;
-    left: 15%;
-    height: 100%;
+    width: 120%;
+    top: 15%;
+    right: 0%;
+    bottom: 0;
+    /* transform: rotate(360deg); */
+    /* height: 100%; */
     animation: animate 4s linear infinite;
 }
+
 @keyframes animate{
     0%{
         transform: translateX(-5rem);
@@ -638,7 +677,7 @@ body{
 /*---------------------- section-Skill ---------------------*/
 
 .skill-header-box{
-    padding: 9.6rem 0 2rem;
+    padding: 11.6rem 0 3.4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -646,7 +685,7 @@ body{
 }
 .skill-header{
     margin-bottom: 2.4rem;
-
+    font-size: 3.2rem;
 }
 
 .skill-para{
@@ -732,7 +771,20 @@ body{
 }
 .contact-heading{
     text-align: center;
-    padding-bottom: 5.6rem;
+    padding-top: 9.6rem;
+    font-size: 3.2rem;
+}
+.contact-top{
+    text-align: center;
+    padding-bottom: 6.4rem;
+    padding-top: 2.4rem;
+    font-size: 1.8rem;
+}
+.contact-top img{
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    top: .5rem;
 }
 
 .cta-form{
@@ -749,7 +801,7 @@ textarea,
     /* padding: 1.2rem; */
     padding: 1rem 0 1rem;
     font-size: 1.8rem;
-    color: #f1f1f1;
+    color: #d1cfcf;
     font-family: inherit;
     border: none;
     background: transparent;
@@ -760,10 +812,13 @@ textarea,
     font-size: 1.6rem;
     font-weight: 500;
 }
-.btn-cta span{
-    text-transform: none;
+
+.btn-cta{
+    padding-bottom: 9.6rem;
 }
+
 .cta-form label{
+
     display: block;
     font-size: 1.6rem;
     font-weight: 500;
@@ -778,6 +833,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 footer p{
     display: block;
@@ -797,11 +853,11 @@ footer p{
     transform: translateX(0);
 }
 
-.section-project.box{
+.section-project .box{
     transform: translateX(300%);
     transition: all 1s ease;
 }
 
-.section-project.box.show{
+.section-project .box.show{
     transform: translateX(0);
 }

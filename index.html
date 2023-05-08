@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="  I'm a Professtional Web Developer and self-motivated learner with a strong passion  for programming and problem-solving. Always learning new technology skills.">
+        <!-- Scroll reveal js -->
+        <script src="https://unpkg.com/scrollreveal"></script>
     <title>Personal &mdash; Portfolio</title>
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -24,16 +27,21 @@
     600;700&display=swap" rel="stylesheet">
     <!-- Swiper Css link -->
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
     <!-- Css link -->
     <link rel="stylesheet" href="./css/style.css">
+        <!-- Media Query -->
+        <link rel="stylesheet" href="./css/media-query.css">
 </head>
 <body>
     <!-- Preloader -->
     <div id="preloader">
         <div id="status"><img src="./preloader/Discuss-1s-200px.gif" alt=""></div>
+        <!-- <p>loading <span>.</span><span>.</span><span>.</span></p> -->
     </div>
+    
     <!-- Header -->
-    <header class="header">
+    <header class="header" href="#home">
         <a href="#home" class="logo">
             <span>P</span>
             <span>O</span>
@@ -54,6 +62,10 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+        <button class="mobile-nav">
+            <ion-icon class="icon-mobile" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile" name="close-outline"></ion-icon>
+        </button>
     </header>
     <main>
 
@@ -62,14 +74,14 @@
             <!-- <div id="particles-js"></div> -->
                 <div class="hero grid grid--2--cols" >
                     <div class="hero-text-box">
-                        <p class="intro">Hello! It's me</p>
-                        <h2 class="my-name">Sai Yan Naing</h2>
+                        <p class="intro item-5">Hello! It's me</p>
+                        <h2 class="my-name item-6">Sai Yan Naing</h2>
                         <h1 class="primary-heading">I am a <span class="multi-text"> </span></h1>
                         <p class="hero-description">
                             I'm a Professtional Web Developer and self-motivated learner with a strong passion  for programming and problem-solving. Always learning new technology skills.
                         </p>
                         <ul class="social">
-                            <li>
+                            <li class="item-3">
                                 <a href="https://www.facebook.com/yannaing.lay.7773"target="_blank" class="facebook-icon">
                                     <i class="fa-brands fa-square-facebook"></i>
                                 </a>
@@ -85,7 +97,7 @@
                                     <i class="fa-brands fa-github"></i>
                                 </a>
                             </li>
-                            <li>
+                            <li class="item-4">
                                 <a href="https://www.linkedin.com/in/yan-naing-%E3%83%89%E3%83%BC%E3%82%B3-2ab181262/" class="linkin-icon" target="_blank">
                                     <i class="fa-brands fa-linkedin"></i>
                                 </a>
@@ -97,9 +109,9 @@
                             </a>
                         </button>                         
                     </div>
-                    <div class="hero-img">
-                        <img src="./img/splash.png" alt="splash" class="splash">
-                        <img src="./img/90032458_219368475881968_6283958300996167650_n-removebg-preview.png" alt="Developer Image">
+                    <div class="hero-img item-1">
+                        <img src="./img/splash.png" alt="splash" id="splash">
+                        <img src="./img/developer-img.png" alt="Developer Image">
                     </div>
                 </div>
             
@@ -129,8 +141,8 @@
             </div>
         </section>
         <!-- Section Project -->
-        <section class="section-project box" id="projects">
-
+        <section class="section-project" id="projects">
+            <div class="box">
             <div class="project-main-title">
                 <h2 class="my-name project-heading">Projects</h2>
                 <p class="project-para">Most recent projects. Let me show you my codes.</p>
@@ -155,7 +167,7 @@
                     <!-- Project-2 -->
                     <div class="project-content grid grid--2--cols swiper-slide">
                         <img src="./img/omnifood icon.png" alt="OmniFood" class="project-img">
-                        <div class="project-data">
+                        <div class="project-data fix-responsive-1">
                             <h3 class="project-title">OmniFood</h3>
                             <p class="project-description">
                                 One of the big delivery food companies.You can enjoy with a delious foods. 
@@ -185,7 +197,7 @@
                     <!-- Project-4 -->
                     <div class="project-content grid grid--2--cols swiper-slide">
                         <img src="./img/PigRollingDice.png" alt="RollingDice" class="project-img">
-                        <div class="project-data">
+                        <div class="project-data fix-responsive-2">
                             <h3 class="project-title">Rolling Dice</h3>
                             <p class="project-description">
                                 There's two players and each player can roll dice three times and press hold button. While rolling dice if you get Dice number (1),it will turn other player side automatically. Enjoy!
@@ -202,6 +214,7 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
+        </div>
         </section>
         <!-- Section Skill -->
         <section class="section-skill" id="skills">
@@ -267,9 +280,10 @@
 
         </section>
         <!-- Section Contact -->
-        <section class="section-contact" id="contact">
-            <div class="container contact-box">
-                <h1 class="my-name contact-heading">Let's Work Together, Grow Together</h1>
+        <section class="section-contact " id="contact">
+            <div class="container contact-box item-2">
+                <h1 class="my-name contact-heading">Contact Me</h1>
+                <p class="contact-top">Let's Work Together, Grow Together <img src="./gif/plant.gif" alt="planting"></p>
                 <form name="Portfolio Contact" autocomplete="off" netlify>
                     <div class="cta-form">
                     <div>
@@ -330,8 +344,6 @@
     <!-- particle.js -->
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
-    <!-- Scroll reveal js -->
-    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Jquery -->
     <script src="./js/jquery-3.6.4.min.js"></script>
     <!-- custom js -->
